@@ -7,7 +7,7 @@ import json
 from dbbasic_forms import FormBuilder
 
 
-def POST(request):
+def handle(request):
     """Delete a form and all its responses"""
     # Extract form_id from path
     # Path format: /admin/forms/{form_id}/delete

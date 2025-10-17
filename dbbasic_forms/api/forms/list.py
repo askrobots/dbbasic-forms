@@ -7,7 +7,7 @@ from pathlib import Path
 from dbbasic_forms import FormBuilder
 
 
-def GET(request):
+def handle(request):
     """List all forms with stats"""
     builder = FormBuilder()
     forms = builder.list_forms()
