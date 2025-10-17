@@ -47,6 +47,12 @@ dev = [
     "flake8>=5.0",
 ]
 
+[tool.setuptools]
+packages = ["dbbasic_forms", "dbbasic_forms.api", "dbbasic_forms.api.forms"]
+
+[tool.setuptools.package-data]
+dbbasic_forms = ["templates/**/*.html", "templates/**/*.css"]
+
 [tool.black]
 line-length = 100
 target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
